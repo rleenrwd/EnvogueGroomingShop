@@ -1,11 +1,13 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
 const dotenv = require('dotenv');
 
 if (process.env.NODE_ENV !== 'production') {
     dotenv.config();
 }
+
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const serviceRoutes = require('./routes/serviceRoutes');
 
 const app = express();
 
@@ -13,12 +15,18 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Test Route
+// Routes 
+app.use('/api/services', serviceRoutes);
+
+
 app.get('/', (req, res) => {
     res.send('Server is running!');
 })
 
-// Connect to MongoDB
+
+
+
+
 const startServer = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_URI);
