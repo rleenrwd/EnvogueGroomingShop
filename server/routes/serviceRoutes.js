@@ -8,6 +8,7 @@ router.get('/', serviceController.getAllServices);
 
 // Admin Routes
 router.post('/', protect, serviceController.createService);
+router.get('/:id', protect, serviceController.getServiceById);
 router.put('/:id', protect, serviceController.updateService);
 router.delete('/:id', protect, serviceController.deleteService);
 

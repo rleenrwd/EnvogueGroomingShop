@@ -8,6 +8,7 @@ router.post('/', bookingController.createBooking);
 
 //ADMIN
 router.get('/', protect, bookingController.getAllBookings);
+router.get('/:id', protect, bookingController.getBookingById);
 router.put('/:id', protect, bookingController.updateBooking);
 router.delete('/:id', protect, bookingController.deleteBooking);
 

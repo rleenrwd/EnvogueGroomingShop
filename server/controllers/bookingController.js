@@ -30,6 +30,16 @@ exports.createBooking = async (req, res) => {
 };
 
 // ADMIN ROUTES
+exports.getBookingById = async (req, res) => {
+    try {
+        const booking = await Booking.findById(req.params.id);
+        if (!booking) return res.status(404).json({message: 'Booking not found'});
+        res.json(booking);
+    } catch (err) {
+        res.status(500).json({message: err.message});
+    }
+};
+
 exports.updateBooking = async (req, res) => {
     try {
         const booking = await Booking.findByIdAndUpdate(

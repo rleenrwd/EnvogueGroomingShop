@@ -1,5 +1,6 @@
 const ContactMessage = require('../models/ContactMessages');
 
+// ADMIN ONLY
 exports.getAllMessages = async (req, res) => {
     try {
         const messages = await ContactMessage.find().sort({createdAt: -1});
@@ -9,6 +10,7 @@ exports.getAllMessages = async (req, res) => {
     }
 };
 
+// PUBLIC 
 exports.createMessage = async (req, res) => {
     try {
         const {name, email, message} = req.body;
@@ -26,6 +28,7 @@ exports.createMessage = async (req, res) => {
     }
 }
 
+// ADMIN ONLY
 exports.deleteMessage = async (req, res) => {
     try {
         const message = ContactMessage.findByIdAndDelete(req.params.id);
