@@ -6,10 +6,10 @@ const protect = async (req, res, next) => {
 
     // Check if token is provided in authorization header
     // A valid header looks like: Authorization: Bearer <token>
-    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
         try {
             // Get token from header by splitting the string and taking the value at index 1
-            token = req.headers.authorization.split('')[1];
+            token = req.headers.authorization.split(' ')[1];
 
             // Verify token, if valid, it returns the decoded payload (which includes the user ID)
             const decoded = jwt.verify(token, process.env.JWT_SECRET);
