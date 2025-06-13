@@ -7,7 +7,9 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+
 const serviceRoutes = require('./routes/serviceRoutes');
+const testimonialRoutes = require('./routes/testimonialRoutes');
 
 const app = express();
 
@@ -17,6 +19,9 @@ app.use(express.json());
 
 // Routes 
 app.use('/api/services', serviceRoutes);
+app.use('/api/testimonials', testimonialRoutes);
+
+
 
 
 app.get('/', (req, res) => {

@@ -4,6 +4,7 @@ const testimonialSchema = new mongoose.Schema(
     {
         name: {type: String, required: true},
         quote: {type: String, required: true},
+        avatar: {type: String, require: true}
     },
     {
         timestamps: true
