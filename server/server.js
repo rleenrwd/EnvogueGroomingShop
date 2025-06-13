@@ -7,6 +7,7 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const connectDB = require('./config/db');
 
 const serviceRoutes = require('./routes/serviceRoutes');
 const testimonialRoutes = require('./routes/testimonialRoutes');
@@ -29,25 +30,16 @@ app.use('/api/bookings', bookingRoutes);
 
 
 
-
-app.get('/', (req, res) => {
-    res.send('Server is running!');
-})
-
-
-
-
-
 const startServer = async () => {
     try {
-        await mongoose.connect(process.env.MONGODB_URI);
-        console.log('MongoDB Connected Successfully!');
+        await connectDB();
         const PORT = process.env.PORT || 5000;
         app.listen(PORT, () => {
             console.log('Server running on port: ', PORT);
         });
     } catch (err) {
         console.error('Failed to connect to MongoDB: ', err.message);
+        process.exit(1);
     }
 }
 
