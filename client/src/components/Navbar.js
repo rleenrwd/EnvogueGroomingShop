@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BrandLogo from '../assets/navbarAssets/evLogo.png'
+import '../styles/Navbar.css';
 
 const Navbar = () => {
     return (
@@ -14,7 +15,7 @@ const Navbar = () => {
         alt='En Vogue Pet Grooming Brand Logo'  
         className='img-fluid'
         />
-        En Vogue Pet Grooming</Link>
+        <span id='shopName'>En Vogue Pet Grooming</span></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -38,7 +39,7 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/booking">Booking</Link>
+              <Link className="nav-link" to="/bookings">Booking</Link>
             </li>
 
             <li className="nav-item">

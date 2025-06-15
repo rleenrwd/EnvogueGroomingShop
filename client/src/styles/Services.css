@@ -1,0 +1,67 @@
+#titleAndParagraph {
+    padding-bottom: 70px;
+}
+
+#sigServH2M2L {
+    font-family: 'Playfair Display', sans-serif;
+    text-align: left;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#sigServHr {
+    width: 100px;
+    border: none;
+    border-right: 5px solid black;
+    transform: rotate(180deg);
+    transform-origin: center;
+    margin-top: 70px;
+    background-color: transparent;
+    opacity: 1;
+}
+
+#sigServP {
+    padding-top: 70px;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1.1rem;
+    text-align: left;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+
+    #sigServHr {
+        border-right: none;
+        border-top: 5px solid black;
+        height: 2px;
+        width: 50%;
+        margin: 1.5rem auto;
+        margin-bottom: -20px;
+        margin-top: 30px;
+        align-self: center;
+        order: 0;
+    }
+
+    #sigServH2S {
+        font-family: 'Playfair Display', sans-serif;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #sigServH2M2L {
+        display: none;
+    }
+
+    #sigServP {
+        max-width: 75%;
+        margin-top: -20px;
+    }
+}
+
+@media (min-width: 768px) {
+    #sigServH2S {
+        display: none;
+    }
+}

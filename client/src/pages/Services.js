@@ -19,38 +19,44 @@ const Services = ()  => {
             }
         };
         fetchServices();
-    }, []); // This empty array tells react when to run the code inside useEffect
-            // An empty array means, run the function only once at the beginning(first mounts)
-            // Without the array at the end, your code inside useEffect will run on every render and 
-            // That's not what we want when fetching data. So for api calls, use the [] empty array
-            // To avoid multiple unnecessary requests. 
+    }, []); 
 
 
 
     return (
-        <>
+    <>
          <Navbar />
-         <div className='container-fluid px-0' id='mainImg'>
+         <section id='mainImgBanner' className='container-fluid px-0' >
 
             <img 
             src={mainImg} 
             className='img-fluid' 
             alt='Dog getting a bath by groomer' />
 
-         </div>
+         </section>
 
-         <div className='container-fluid'>
-            <div className='row'>
-                <div className='col'>
-                    <h2 className='text-center pt-5'>Our Signature Services</h2>
-                </div>
+        <section id='services'>
+            <div id='titleAndParagraph' className='container-fluid'>
+                <div className='row'>
+                    <div id='sigServLeft' className='col-12 col-md-5'>
+                        <h2 id='sigServH2M2L' className='pt-5 display-3'>Our<br />Signature<br />Services</h2>
+                        <h2 id='sigServH2S' className='pt-5 display-3'>Our Signature<br/>Services</h2>
+                    </div>
 
-                <div className='col'>
-                    <h2 className='text-center pt-5'>Our Signature Services</h2>
+                    <hr id='sigServHr' className='col-md-2' />
+
+                    <div className='col-12 col-md-5'>
+                        <p id='sigServP'>
+                            At En Vogue Pet Grooming in San Francisco, we offer an exclusive collection of signature pet services crafted for the most discerning pet parents. From couture-level grooming and indulgent spa baths to our boutique doggy day care, refined overnight boarding, and elegant dog walking experiences — every offering is delivered with intention, precision, and poise. This is care reimagined — where wellness meets sophistication, and every visit feels like a five-star retreat for your cherished companion.</p>
+                    </div>
                 </div>
             </div>
-         </div>
-        </>
+
+            <div id='serviceCards' className='container-fluid'>
+
+            </div>
+        </section>
+    </>
     );
 };
 
