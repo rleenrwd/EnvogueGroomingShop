@@ -26,6 +26,9 @@ const Services = ()  => {
     return (
     <>
          <Navbar />
+
+         {/* HERO BANNER */}
+
          <section id='mainImgBanner' className='container-fluid px-0' >
 
             <img 
@@ -35,7 +38,9 @@ const Services = ()  => {
 
          </section>
 
-        <section id='services'>
+        {/* INTRO SECTION */}
+
+        <section id='introSection'>
             <div id='titleAndParagraph' className='container-fluid'>
                 <div className='row'>
                     <div id='sigServLeft' className='col-12 col-md-5'>
@@ -51,11 +56,42 @@ const Services = ()  => {
                     </div>
                 </div>
             </div>
-
-            <div id='serviceCards' className='container-fluid'>
-
-            </div>
         </section>
+
+        {/* MAIN SECTION */}
+
+        <main id="mainSection" className="container-fluid">
+        {services.map((service) => (
+          <div className="card mb-4" key={service._id}>
+            <div className="row g-0">
+              <div className="col-md-4">
+                <img
+                  src={service.imageUrl || 'https://via.placeholder.com/600x400'}
+                  className="img-fluid rounded-start h-100 w-100 object-fit-cover"
+                  alt={service.title}
+                />
+              </div>
+
+              <div className="col-md-8">
+                <div className="card-body h-100 d-flex flex-column">
+                  <h5 className="card-title">{service.name}</h5>
+                  <p className="card-text flex-grow-1">{service.subtitle}</p>
+                  <p className="card-text flex-grow-1">{service.description}</p>
+                  <p className="card-text fw-bold mb-2">${service.price}</p>
+                  <p className="card-text fw-bold mb-2">{service.durationMinutes}</p>
+                  {service.createdAt && (
+                    <p className="card-text">
+                      <small className="text-muted">
+                        Last updated {new Date(service.createdAt).toLocaleDateString()}
+                      </small>
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </main>
     </>
     );
 };
