@@ -1,0 +1,16 @@
+footer {
+    width: 100vw;
+    height: 50px;
+    max-height: 50px;
+    padding-top: 13px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+@media (max-width: 767.98px) {
+    footer small {
+        font-size: .7rem;
+    }
+}

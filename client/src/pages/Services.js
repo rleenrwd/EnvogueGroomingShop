@@ -5,6 +5,7 @@ import { getServices } from '../services/servicesAPI';
 import mainImg from '../assets/serviceAssets/dog_bath.jpg';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../components/ServiceCard';
+import Footer from '../components/Footer';
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -64,6 +65,9 @@ const Services = () => {
           <ServiceCard key={service._id} service={service} index={index} />
         ))}
       </main>
+
+
+      <Footer />
     </>
   );
 };
