@@ -5,6 +5,13 @@ import '../styles/Navbar.css';
 
 const Navbar = () => {
     return (
+  <>
+    <div className='pt-2 pawsh text-center'>
+        {/* <p>The Ultimate PAWsh Experience</p> */}
+        <p>Treat your fur-baby to the ultimate PAWsh experience in San Francisco, CA!</p>
+        <small>#PawsEnVogue</small>
+    </div>
+
     <nav id='mainNav' className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container">
         <Link className="navbar-brand" to="/">
@@ -53,8 +60,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-
+  </>
     );
 };
-
 export default Navbar;

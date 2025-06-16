@@ -1,0 +1,39 @@
+/******************** BACKGROUND STYLES   ********************/
+
+/******************** TEXT STYLES   ********************/
+
+#aboutMain h1 {
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+    
+}
+
+#aboutMain hr {
+    width: 70%;
+    height: 2px;
+    margin: 1rem auto;
+    border: none;
+    background: linear-gradient(to right, transparent, white, transparent);
+}
+
+#aboutMain p {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    
+}
+
+
+.centerText {
+    text-align: center;
+    
+}
+
+.centerText span {
+    color: #DFAF37;
+    font-family: 'Corinthia', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+

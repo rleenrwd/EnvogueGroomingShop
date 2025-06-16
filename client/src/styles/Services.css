@@ -25,7 +25,8 @@
 #sigServP {
     padding-top: 70px;
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
     text-align: left;
     width: fit-content;
     margin: 0 auto;
@@ -80,7 +81,8 @@
 
 .mainCard .subtitle {
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
 }
 
 #mainCrdBtn {
@@ -88,11 +90,6 @@
     margin-top: -5px !important;
     padding: 5px 40px !important;
     margin-bottom: 5px;
-
-    
-}
-
-.buttonStyle {
     color: #DFAF37 !important;
     font-family: 'Eb Garamond', sans-serif !important;
     font-weight: 500 !important;
@@ -100,12 +97,14 @@
     text-decoration: none !important;
 }
 
-.buttonStyle:hover {
+
+.mainCrdBtn:hover {
     color: #9a7924 !important;
 }
 
 .read-more {
-    font-size: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
     font-family: 'Eb Garamond', sans-serif !important;
     color: black;
 }

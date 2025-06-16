@@ -25,7 +25,8 @@
 
 .goldenWords {
     font-family: 'Eb Garamond', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
     color: rgb(212,175,55);
     padding-top: 10px;
 }
@@ -49,14 +50,16 @@
 
 #descr {
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
     padding-top: 5px;
 }
 
 
 #note {
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
     padding-top: 5px;
 }
 
@@ -87,7 +90,8 @@
 
 .cancelP {
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
     padding-top: 5px;
 }
 
@@ -104,12 +108,13 @@
 /********************** CONTACT STYLES *********************/
 #contact {
     font-family: 'EB Garamond', sans-serif;
-    color: #DFAF37
+    color: #DFAF37;
 }
 
 #contactDetails {
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
     color: white;
 }
 
