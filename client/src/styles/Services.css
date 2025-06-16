@@ -69,3 +69,43 @@
 }
 
 /********************** MAIN SECTION STYLES *********************/
+
+.mainCard {
+    background-color: whitesmoke !important;
+}
+.mainCard .title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.7rem;
+}
+
+.mainCard .subtitle {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1.1rem;
+}
+
+#mainCrdBtn {
+    background-color: rgb(32, 29, 29) !important;
+    margin-top: -5px !important;
+    padding: 5px 40px !important;
+    margin-bottom: 5px;
+
+    
+}
+
+.buttonStyle {
+    color: #DFAF37 !important;
+    font-family: 'Eb Garamond', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 1.2rem;
+    text-decoration: none !important;
+}
+
+.buttonStyle:hover {
+    color: #9a7924 !important;
+}
+
+.read-more {
+    font-size: 1rem;
+    font-family: 'Eb Garamond', sans-serif !important;
+    color: black;
+}

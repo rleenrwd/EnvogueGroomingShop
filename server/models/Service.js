@@ -5,7 +5,7 @@ const serviceSchema = new mongoose.Schema({
     subtitle: {type: String, required: true},
     description: {type: String, required: true},
     price: {type: Number, required: true},
-    durationMinutes: {type: Number, required: true},
+    durationHours: {type: Number, required: true},
     imageUrl: String,
     createdAt: {type: Date, default: Date.now}
 })
