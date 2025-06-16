@@ -1,0 +1,124 @@
+
+/********************** MAIN SECTION STYLES *********************/
+
+.left {
+    background-color: whitesmoke;
+}
+
+#title {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+#subtitle {
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+/********************** PRICING, TIME, ADDRESS STYLES *********************/
+
+.grayBar {
+    background-color: #404040;
+    border: 4px solid black;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.goldenWords {
+    font-family: 'Eb Garamond', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(212,175,55);
+    padding-top: 10px;
+}
+
+.borderR {
+    border-right: 4px solid black;
+}
+
+@media (max-width: 767.98px) {
+    .goldenWords {
+        font-size: 1rem;
+    }
+}
+
+
+/********************** OVERVIEW STYLES *********************/
+
+#experience {
+    font-family: 'EB Garamond', sans-serif;
+}
+
+#descr {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1.1rem;
+    padding-top: 5px;
+}
+
+
+#note {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1.1rem;
+    padding-top: 5px;
+}
+
+
+.mainBtn {
+    background-color: rgb(32, 29, 29) !important;
+    margin-top: 5px !important;
+    padding: 10px 100px !important;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    
+}
+
+.buttonStyle {
+    color: #DFAF37 !important;
+    font-family: 'Eb Garamond', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 1.3rem;
+    text-decoration: none !important;
+}
+
+.buttonStyle:hover {
+    color: #9a7924 !important;
+}
+
+/********************** CANCELLATION STYLES *********************/
+
+.cancelP {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1.1rem;
+    padding-top: 5px;
+}
+
+#cancellation h2 {
+    font-family: 'EB Garamond', sans-serif;
+}
+
+/********************** SIDEBAR STYLES *********************/
+
+.verticalGray {
+    background-color: #404040;
+}
+
+/********************** CONTACT STYLES *********************/
+#contact {
+    font-family: 'EB Garamond', sans-serif;
+    color: #DFAF37
+}
+
+#contactDetails {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+}
+
+@media (max-width: 767.98px) {
+    #contact {
+        display: none;
+    }
+
+    #contactDetails {
+        display: none;
+    }
+}

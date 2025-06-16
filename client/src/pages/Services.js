@@ -67,7 +67,7 @@ const Services = () => {
       </main>
 
 
-      <Footer />
+      <Footer/>
     </>
   );
 };

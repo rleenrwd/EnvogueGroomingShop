@@ -1,5 +1,6 @@
 
 @media (max-width: 768px) {
+
     #shopName {
         font-size: 1.6rem;
         margin: 0 auto;
@@ -15,6 +16,10 @@
     #navbarBtn {
         padding: 2px 100px;
     }
+}
+
+#mainNav {
+    background-color: white !important;
 }
 
 .btn {
