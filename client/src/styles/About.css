@@ -43,3 +43,12 @@
 .mainCrdBtn {
     width: 200px;
 }
+
+.aboutBtn {
+    text-decoration: none;
+    color: #DFAF37;
+}
+
+.aboutBtn:hover {
+    color: #9a7924 !important;
+}

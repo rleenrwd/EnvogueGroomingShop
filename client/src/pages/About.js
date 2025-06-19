@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 import '../styles/About.css';
 
 const About = () => {
@@ -13,7 +14,7 @@ const About = () => {
                 <p className='centerText'>Thank you for your support!<br/><span>- En Vogue </span></p>
                 
                 <div id='btnContainer' className='container-fluid text-center'>
-                    <button className='mainBtn buttonStyle'>View Services</button>
+                    <button className='mainBtn buttonStyle'><Link className='aboutBtn' to='/services'>View Services</Link></button>
                 </div>
 
                 
