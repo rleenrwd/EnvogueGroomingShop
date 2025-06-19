@@ -1,6 +1,8 @@
-/******************** BACKGROUND STYLES   ********************/
-
 /******************** TEXT STYLES   ********************/
+#aboutMain {
+    height: 100vh;
+    position: relative;
+}
 
 #aboutMain h1 {
     font-family: 'Playfair Display', sans-serif;
@@ -9,17 +11,20 @@
 }
 
 #aboutMain hr {
-    width: 70%;
+    width: 50%;
     height: 2px;
     margin: 1rem auto;
     border: none;
-    background: linear-gradient(to right, transparent, white, transparent);
+    background: linear-gradient(to right, transparent, black, transparent);
 }
 
 #aboutMain p {
     font-family: 'Cormorant Garamond', sans-serif;
     font-size: 1.125rem;
     line-height: 1.6;
+    width: 435px;
+    margin: 10px auto;
+    padding-top: 30px;
     
 }
 
@@ -32,8 +37,9 @@
 .centerText span {
     color: #DFAF37;
     font-family: 'Corinthia', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
-
-
+.mainCrdBtn {
+    width: 200px;
+}

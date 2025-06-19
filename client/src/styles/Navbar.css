@@ -17,7 +17,7 @@
 /**************** NAVBAR STYLES  **************/
 
 #mainNav {
-    background-color: white !important;
+    background-color: whitesmoke !important;
 }
 
 .btn {
@@ -66,5 +66,6 @@
     #navbarBtn {
         padding: 2px 100px !important;
     }
-
 }
+
+
