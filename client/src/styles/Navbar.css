@@ -36,18 +36,35 @@
 @media (max-width: 768px) {
 
     #shopName {
-        font-size: 1.6rem;
-        margin: 0 auto;
+        display: none;
     }
     #brandLogo {
+        display: block;
         width: 100px;
-        margin-left: -5px;
-        margin-right: 15px;
+        margin-left: 31px;
+        padding-top: 5px;
+    }
+
+    .onSmallOnly {
+        color: black;
+        padding-left: 30px;
+    }
+
+    .navbar-toggler {
+        margin-right: 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .onSmallOnly {
+        display: none;
     }
 }
 
 @media (max-width: 992px) {
     #navbarBtn {
-        padding: 2px 100px;
+        padding: 2px 100px !important;
     }
+
 }
