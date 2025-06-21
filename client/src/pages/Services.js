@@ -29,6 +29,7 @@ const Services = () => {
       {/* HERO BANNER */}
       <section id="mainImgBanner" className="container-fluid px-0">
         <img
+          id='servImage'
           src={mainImg}
           className="img-fluid"
           alt="Dog getting a bath by groomer"
